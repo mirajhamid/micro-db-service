@@ -1,0 +1,24 @@
+CREATE TABLE Employee (
+    ID int NOT NULL,
+    Last_Name varchar(255) NOT NULL,
+    First_Name varchar(255) NOT NULL,
+    Age int,
+    PRIMARY KEY (ID)
+);
+
+
+insert into Employee values (1, 28, 'Sam', 'Hamid' );
+insert into Employee values (2,  28,  'Ann', 'Silva' );
+
+
+drop table person;
+CREATE TABLE Person (
+    ID int NOT NULL,
+    Last_Name varchar(255) NOT NULL,
+    First_Name varchar(255) NOT NULL,
+    Age int,
+    PRIMARY KEY (ID)
+);
+
+insert into person values (1, 28, 'WE', 'Hamid' );
+insert into person values (2,  28,  'QA', 'Silva' );
