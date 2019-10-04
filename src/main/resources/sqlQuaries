@@ -9,7 +9,7 @@ CREATE TABLE Employee (
 
 insert into Employee values (1, 28, 'Sam', 'Hamid' );
 insert into Employee values (2,  28,  'Ann', 'Silva' );
-
+insert into Employee values (3,  21,  'Hamid', 'Peter' );
 
 drop table person;
 CREATE TABLE Person (
