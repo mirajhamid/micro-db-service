@@ -61,9 +61,9 @@ public class PersonController {
 	
 	//GET Type2
 	@GetMapping(value="/employee/name/{name}" , produces = MediaType.APPLICATION_JSON_VALUE )
-	public Employee getEmployee(@PathVariable("name") String name) {
-		log.info("getEmployee by name " + name);
-		return employeeRepository.findByFirstName(name);
+	public List<Employee> getEmployee(@PathVariable("name") String name) {
+		log.info("getEmployee by name " + name.toLowerCase());
+		return employeeRepository.findByName(name);
 		
 	}
 	
